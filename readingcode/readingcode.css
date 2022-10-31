@@ -22,7 +22,7 @@
 .header {
     background-color: var(--verdeclaro);
 
-    height: 80px;
+    height: 60px;
     width: 100%;
 
     padding: 0px 40px 0px 40px;
@@ -364,7 +364,7 @@
     }
     .header h1 {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         float: none;
     }
 
@@ -466,8 +466,9 @@
     }
 
     .noticias .img-noticia img{
-        width: 400px;
+        width: 100px;
         margin-top: 50px;
+
     }
 
     .noticias .noticia {
@@ -481,6 +482,7 @@
 
         padding-bottom: 50px;
         padding-top: 10px;
+
     }
 
     .noticias-texto p {
