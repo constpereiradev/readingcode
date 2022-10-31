@@ -20,6 +20,8 @@
     display: none;
 }
 .header {
+    position: sticky;
+    top: 0;
     background-color: var(--verdeclaro);
 
     height: 60px;
@@ -107,22 +109,53 @@
     
 } 
 
-
-.botoes button {
-    background-color: var(--verdeclaro);
-    height: 40px;
-    width: 190px;
-
-    border-radius: 5px;
-    border: none;
-    
+.card .texto {
+    height: fit-content;
+    font-size: 14px;
 }
 
-.botoes button:hover {
+.botoes .card {
+    background-color: var(--preto);
+    height: 250px;
+    width: 220px;
+
+    border-radius: 10px;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    font-weight: 300;
+        
+}
+
+.card button {
+    font-size: 14px;
+    background-color: var(--verdeescuro);
+    color: var(--preto);
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.card button:hover {
     
     border: solid black 1px;
-    transition-duration: 2s;
+    background-color: white;
+    color: var(--preto);
+    border: none;
+    transition: 2s;
     
+    font-weight: bold;
 }
 
 .codigo {
@@ -275,7 +308,7 @@
 
 #submit {
     background-color: var(--verdeclaro);
-    color: preto;
+    color: var(--preto);
 
     font-weight: bold;
     border: none;
@@ -321,6 +354,25 @@
 
         margin-bottom: 20px;
     }
+
+    .botoes .card {
+        background-color: var(--preto);
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
+
+    }
+
+    .card .texto {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .card button {
+        width: 50px;
+        background-color: var(--verdeescuro);
+        font-size: 12px;
+    }
     
     .noticias .img-noticia img{
         width: 598px;
@@ -363,9 +415,8 @@
         width: 100%;
     }
     .header h1 {
-        font-weight: bold;
         font-size: 20px;
-        float: none;
+        margin-left: 110px;
     }
 
     .header nav {
@@ -375,6 +426,7 @@
     .header .menu {
         display: block;
         width: 50px;
+        float: left;
     }
 
     .main {
@@ -387,23 +439,30 @@
     .main .texto h2 {
         font-size: 40px;
         width: 400px;
+        margin-top: -250px;
     }
 
     .main .botoes {
         display: flex;
         flex-direction: column;
-        margin-top: -150px;
+        margin-top: -250px;
     
     }
-    .main .botoes button {
-
-
-        height: 60px;
+    .botoes .card {
+        height: 300px;
         width: 300px;
+        margin-bottom: 30px;
+        background-color: var(--preto);
 
-        font-size: 18px;
+        font-size: 12px;
+        padding: 10px;
+    }
 
-        margin-bottom: 20px;
+    .card button {
+        background-color: var(--verdeescuro);
+        color: black;
+        width: 50px;
+
     }
 
     .codigo {
