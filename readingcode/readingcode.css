@@ -97,6 +97,7 @@
     align-items: left;
 
     color: white;
+    width: 350px;
 
 }
 
@@ -438,13 +439,6 @@
 
 @media screen and (max-width: 900px) {
 
-    /*
-    
-
-    
-    
-    */
-
     /*MAIN*/
     .header h1 {
         font-size: 20px;
@@ -601,12 +595,15 @@
     .header {
         height: 80px;
         position: relative;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+        padding: 0px 30px 0px 30px;
     }
     .header h1 {
         font-size: 20px;
-        margin-left: 110px;
     }
 
     .header nav {
@@ -615,18 +612,82 @@
 
     .header .menu {
         display: block;
-        width: 50px;
-        float: left;
+        width: 40px;
     }
 
     .main {
         background-image: none;
         color: var(--preto);
+        background-image: url('');
+    }
+    .landing-page .texto {
+        margin-top: -120px;
     }
 
     .landing-page h2, .landing-page p{
         color: var(--preto);
     }
+    .landing-page p{
+        font-size: 16px;
+    }
+    .landing-page h2{
+        font-size: 38px;
+    }
 
+    .landing-page #btn-landing {
+        box-shadow: 0px 0px 0px 0px;
+        height: 50px;
+        font-size: 16px;
+        width: 280px;
+    }
+
+    /*TUTORIAIS*/
+
+    .tutoriais {
+        flex-direction: column;
+    }
+    .tutoriais img{
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    /*NOTICIAS*/
+
+    .noticias {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .noticia2 .texto h2, .noticia2 .texto p{
+        width: 400px;
+    }
+
+     .noticia2 .texto p{
+        font-size: 14px;
+    }
+
+    .noticia2 .texto-img {
+       height: fit-content;
+       justify-content: center;
+       align-items: center;
+
+    }
+    .texto-img img {
+
+       width: 150px;
+       margin: 0px 0px 0px 50px;
+    }
+
+    .noticia2 .texto-img p {
+        font-size: 14px;
+        padding: 0px 0px 25px 0px;
+        width: 200px;
+    }
+
+    #btn-lernoticias {
+        margin: 0px;
+        font-size: 14px;
+        width: 200px;
+    }
 }
