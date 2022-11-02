@@ -624,7 +624,7 @@
         color: var(--preto);
     }
 
-    .landing-page{
+    .landing-page h2, .landing-page p{
         color: var(--preto);
     }
 
