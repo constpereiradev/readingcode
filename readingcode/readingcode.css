@@ -593,17 +593,19 @@
 @media screen and (max-width: 600px){
 
     .header {
-        height: 80px;
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0px 30px 0px 30px;
+        padding: 0px 40px 0px 40px;
+
+       background-color: black;
     }
     .header h1 {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .header nav {
@@ -613,34 +615,42 @@
     .header .menu {
         display: block;
         width: 40px;
+        color: white;
     }
 
     .main {
-        background-image: none;
         color: var(--preto);
-        background-image: url('');
+        background-image: url('https://images.pexels.com/photos/5496464/pexels-photo-5496464.jpeg?auto=compress&cs=tinysrgb&w=1600');
     }
     .landing-page .texto {
-        margin-top: -120px;
+        margin-top: -50px;
     }
 
     .landing-page h2, .landing-page p{
-        color: var(--preto);
+        color: white;
     }
     .landing-page p{
-        font-size: 16px;
+        font-size: 14px;
     }
     .landing-page h2{
         font-size: 38px;
+
     }
+
 
     .landing-page #btn-landing {
         box-shadow: 0px 0px 0px 0px;
         height: 50px;
         font-size: 16px;
         width: 280px;
+        background-color: rgb(221, 221, 221);
+        color: var(--preto);
+        font-weight: 700;
     }
 
+    .main .landing-page .texto {
+        width: fit-content;
+    }
     /*TUTORIAIS*/
 
     .tutoriais {
@@ -651,16 +661,44 @@
         margin-top: 50px;
     }
 
+    .tutoriais .foto {
+        width: 35px;
+        height: 30px;
+    }
+
+    .tutoriais .pesquisa-javascript .resultado {
+        height: 180px;
+    }
+
+    #btn-tutoriais {
+        height: 40px;
+    }
+
+    .tutoriais .resultado h2 {
+        font-size: 16px;
+    }
+    .tutoriais .resultado p {
+        font-size: 12px;
+    }
+    .autor .dados-autor p {
+        font-size: 10px;
+    }
+
     /*NOTICIAS*/
 
     .noticias {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
-    
+
+
+    .divisao {
+        width: 100%;
+    }
     .noticia2 .texto h2, .noticia2 .texto p{
-        width: 400px;
+        width: 300px;
     }
 
      .noticia2 .texto p{
@@ -674,7 +712,6 @@
 
     }
     .texto-img img {
-
        width: 150px;
        margin: 0px 0px 0px 50px;
     }
@@ -688,6 +725,15 @@
     #btn-lernoticias {
         margin: 0px;
         font-size: 14px;
-        width: 200px;
+        width: 150px;
+    }
+
+    .noticia2 .texto-img p {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .noticia2 .ler-noticias {
+        width: 150px;
     }
 }
