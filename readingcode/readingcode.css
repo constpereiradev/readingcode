@@ -22,18 +22,19 @@
 .header {
     position: sticky;
     top: 0;
-    background-color: var(--verdeclaro);
 
     height: 60px;
     width: 100%;
 
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px 0px 100px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
     position: fixed;
+    color: var(--verde);
+
 }
 
 .header .menu {
@@ -41,12 +42,13 @@
 }
 
 .header h1 {
-
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 24px;
     float: left;
 }
 .header nav {
     width: 100%;
+    
 }
 .header ul {
     display: flex;
@@ -54,6 +56,7 @@
     justify-content: right;
 
     list-style-type: none;
+    
 }
 
 .header ul li{
@@ -65,197 +68,291 @@
     list-style-type: none;
 
     margin-right: 60px;
+
 }
 
 .header ul li a {
     text-decoration: none;
-    color: var(--preto);
+    color: white;
 }
 
 .header ul li a:hover {
     text-decoration: underline;
 }
 
+/*MAIN*/
 .main {
     padding: 100px;
+    background-image: url('https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .main .landing-page .texto{
     height: 100vh;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
 
+    color: white;
+
+}
+
+#btn-landing {
+    background-color: var(--preto);
+    color: white;
+    border: none;
+    margin-top: 30px;
+
+    box-shadow: rgb(66, 66, 66) 1px 1px 50px 1px;
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#btn-landing:hover  {
+    color: var(--verdeclaro);
+    transition: 2s;
 }
 
 .landing-page h2 {
     width: 400px;
 
     font-size: 48px;
+    font-weight: 700;
 }
 
-
-.texto #simbolo {
-    width: 300px;
-}
-
-.main .botoes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-} 
-
-.card .texto {
-    height: fit-content;
+.landing-page p {
     font-size: 14px;
+    font-weight: 400;
+
+
+    margin-top: 20px;
+    color: rgb(237, 237, 237);
 }
 
-.botoes .card {
-    background-color: var(--preto);
-    height: 250px;
-    width: 220px;
+/*TUTORIAIS*/
 
-    border-radius: 10px;
-    border: none;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-
-    color: white;
-    text-align: center;
-
-    font-weight: 300;
-        
-}
-
-.card button {
-    font-size: 14px;
-    background-color: var(--verdeescuro);
-    color: var(--preto);
-    width: 150px;
-    border-radius: 10px;
-    border: none;
-    height: 50px;
-    margin-bottom: 20px;
-
-    font-weight: 600;
-}
-
-.card button:hover {
-    
-    border: solid black 1px;
-    background-color: white;
-    color: var(--preto);
-    border: none;
-    transition: 2s;
-    
-    font-weight: bold;
-}
-
-.codigo {
-    border-radius: 10px;
-    width: 402px;
-    height: 450px;
-
-}
-
-.codigos {
-    background-color: var(--preto);
-    padding: 100px;
-}
-
-.codigos .img-texto{
+.tutoriais {
+    background-color: #C2C2C2;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 
-
+    padding: 100px;
 }
 
-.img-texto img {
-    width: 300px;
+.tutoriais .pesquisa-javascript {
+    width: fit-content;
+    height: fit-content;
+
+    background-color: #D9D9D9;
+
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.img-texto .texto {
-    color: white;
-
-    width: 300px;
+.pesquisa-javascript h2 {
+    font-weight: 700;
 }
 
-.texto h2 {
-    margin-bottom: 5px;
-}
-
-.texto button {
-    margin-top: 100px;
+.barra-pesquisa {
+    background-color: white;
+    width: 400px;
     height: 40px;
-    width: 300px;
-
-    border: solid var(--verde) 1px;
     border-radius: 5px;
-    background-color: transparent;
 
-    font-size: 16px;
-    color: #278C41;
-    font-weight: bold;
+    color: rgba(0, 0, 0, 0.37);
+    margin-top: 20px;
+    padding: 10px 0px 10px 20px;
 }
 
-.texto button:hover {
+.resultado {
+    background-color: white;
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+.resultado h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+.resultado p {
+    font-size: 12px;
+    font-weight: 500;
+}
+.autor p {
+    font-weight: 500;
+    font-size: 10px;
+}
+.foto {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    background-color: var(--cinza);
+}
+.autor {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-tutoriais {
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+
+    border: none;
+    background-color: var(--verde);
+    color: var(--preto);
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+#btn-tutoriais:hover {
+
     color: white;
     transition: 2s;
 }
 
-.noticias img {
-    border-radius: 10px;
+
+/*NOTICIAS*/
+#tech {
+    color: black;
+}
+
+.noticias h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #DD2424;
 }
 
 .noticias {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     padding: 100px;
 }
-.noticias-texto {
-    float: left;
-    width: 1000px;
 
-    margin-bottom: 100px;
+.noticias .lado-esquerdo {
+    flex-direction: column;
 }
 
-.noticias-texto h2 {
-    font-size: 44px;
+.lado-esquerdo img {
+    box-shadow: rgb(191, 191, 191) 0.5px 3px 5px 0.5px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 2px;
+}
+
+.lado-esquerdo h3, .lado-esquerdo p {
+    width: 300px;
+}
+
+.lado-esquerdo h3 {
+    font-weight: 600;
+}
+
+.lado-esquerdo p {
+    color: #727171;
+    font-weight: 500;
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: row;
+}
+
+.lado-direito .noticia {
+    background-color: #D9D9D9;
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+}
+
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha {
+    background-color: rgb(108, 108, 108);
+    width: 80%;
+    height: 0.5px;
+    margin: 20px;
+
+}
+
+.noticia2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 100px;
+}
+
+.notica2 .texto {
+    align-items: center;
+}
+
+.noticia2 .texto h2, .noticia2 .texto p {
+    font-weight: 700;
+    width: 750px;
+}
+.noticia2 .texto p {
+    font-weight: 500;
+    color: #727171;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.noticia2 .texto-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.noticia2 .ler-noticias {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #727171;
+    font-weight: 500;
 
     width: 300px;
-    position:  absolute;
-    margin-bottom: -200px;
-    font-weight: bold;
-
-
+    font-size: 18px;
 }
 
-.noticia {
-    background-color: var(--preto);
+#btn-lernoticias {
     color: white;
+    font-weight: 500;
+    background-color: #DD2424;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    height: 50px;
 
-    margin-top: -50px;
-    border-radius: 5px;
-    width: 700px;
-    font-size: 14px;
-    
-    padding: 20px;
+    margin-top: 150px;
 }
 
-.noticia h3 {
-    font-weight: bold;
+#btn-lernoticias:hover{
+    color: black;
+    transition: 2s;
 }
 
 .main-login {
@@ -341,66 +438,159 @@
 
 @media screen and (max-width: 900px) {
 
-    .main .botoes {
-        display: flex;
-        flex-direction: column;
+    /*
     
+
+    
+    
+    */
+
+    /*MAIN*/
+    .header h1 {
+        font-size: 20px;
     }
-    .main .botoes button {
-        height: 50px;
-        width: 250px;
 
-        font-size: 18px;
-
-        margin-bottom: 20px;
+    .header nav ul li {
+        font-size: 12px;
     }
 
-    .botoes .card {
-        background-color: var(--preto);
-        height: 300px;
+    .main {
+        background-size: 100%;
+    }
+
+    .main h2 {
+        font-size: 30px;
         width: 300px;
-        margin-bottom: 30px;
-
+    }
+    .main p {
+        font-size: 12px;
+        width: 270px;
     }
 
-    .card .texto {
-        padding: 20px;
-        font-size: 16px;
+    .main #btn-landing {
+        height: 40px;
+        width: 270px;
+        font-size: 14px;
     }
 
-    .card button {
-        width: 50px;
-        background-color: var(--verdeescuro);
+    /*TUTORIAIS*/
+
+    .tutoriais img {
+        margin-left: 100px;
+    }
+
+    .pesquisa-javascript h2 {
+        font-size: 26px;
+    }
+    
+    .barra-pesquisa {
+        width: 300px;
+        height: 30px;
+        padding: 5px 0px 10px 20px;
         font-size: 12px;
     }
     
-    .noticias .img-noticia img{
-        width: 598px;
-        margin-top: 50px;
-    }
-
-    .noticias .noticia { 
-        width: 450px;
-    }
-
-    .noticias-texto h2{
-        font-size: 34px;
-        margin-top: 20px;
-    }
-
-    .noticias-texto {
-        text-align: center;
+    .resultado {
         width: 300px;
+        height: 150px;
+    }
+    .resultado h4{
+        font-size: 12px;
+
+    }
+    .resultado p {
+        font-size: 10px;
+
+    }
+    .autor p {
+        font-size: 8px;
+    }
+    .foto {
+
+        width: 25px;
+        height: 25px;
     }
 
-    .noticias {
-        padding: 0px;
-        margin-bottom: 100px;
+    
+    #btn-tutoriais {
+        margin-left: 50px;
+        margin-top: 30px;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+    
+        border: none;
+        background-color: var(--verde);
+        color: var(--preto);
+        font-weight: 600;
+    
+        font-size: 14px;
     }
     
-    .passar-noticias {
-        display: none;
+    #btn-tutoriais:hover {
+    
+        color: white;
+        transition: 2s;
     }
+
+
+    /*NOTICIAS*/
+
+    .noticias h2 {
+        font-size: 30px;
+    }
+
+    .lado-esquerdo img {
+        width: 250px;
+    }
+    
+    .lado-esquerdo h3, .lado-esquerdo p {
+        width: 300px;
+    }
+    
+    .lado-esquerdo h3 {
+        font-size: 24px;
+    }
+    
+    .lado-esquerdo p {
+        font-size: 14px;
+    }
+    
+    .lado-direito .noticia {
+        width: 140px;
+        height: 110px;
+    }
+    
+    
+    .notica2 .texto {
+        align-items: center;
+    }
+    
+    .noticia2 .texto h2, .noticia2 .texto p {
+        width: 550px;
+    }
+
+    .noticia2 .texto h2 {
+        font-size: 22px;
+    }
+
+    .noticia2 .texto p {
+        font-size: 16px;
+    }
+    
+    
+    .noticia2 .ler-noticias {
+        width: 250px;
+        font-size: 16px;
+    }
+    
+    #btn-lernoticias {
+        height: 40px;
+        font-size: 14px;
+    }
+
+
+
 }
 
 
@@ -430,138 +620,13 @@
     }
 
     .main {
-        padding: 0px;
-        text-align: center;
-    }
-    .main .texto #simbolo{
-        display: none;
-    }
-    .main .texto h2 {
-        font-size: 40px;
-        width: 400px;
-        margin-top: -250px;
+        background-image: none;
+        color: var(--preto);
     }
 
-    .main .botoes {
-        display: flex;
-        flex-direction: column;
-        margin-top: -250px;
+    .landing-page{
+        color: var(--preto);
+    }
+
     
-    }
-    .botoes .card {
-        height: 300px;
-        width: 300px;
-        margin-bottom: 30px;
-        background-color: var(--preto);
-
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .card button {
-        background-color: var(--verdeescuro);
-        color: black;
-        width: 50px;
-
-    }
-
-    .codigo {
-        height: 540px;
-    }
-    
-    .codigos .img-texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    
-    }
-    
-    .codigos .texto h2 {
-        font-size: 28px;
-    }
-    .codigos .texto p {
-        font-size: 18px;
-    }
-
-    .img-texto img {
-        width: 350px;
-    }
-    
-    .img-texto .texto {
-        margin-top: 20px;
-        color: white;
-    
-        width: 400px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-    }
-    
-    .texto h2 {
-        margin-bottom: 5px;
-        font-size: 40px;
-    }
-    .texto p {
-        font-size: 26px;
-    }
-    
-    .texto button {
-        margin-top: 50px;
-        height: 50px;
-        width: 300px;
-    
-        border: solid var(--verde) 1px;
-        border-radius: 5px;
-        background-color: transparent;
-    
-        font-size: 18px;
-        color: #278C41;
-        font-weight: bold;
-    }
-
-    .noticias .img-noticia img{
-        width: 100px;
-        margin-top: 50px;
-
-    }
-
-    .noticias .noticia {
-        width: 300px;
-    }
-
-    .noticias-texto h2{
-        font-size: 28px;
-        width: 100%;
-        text-align: center;
-
-        padding-bottom: 50px;
-        padding-top: 10px;
-
-    }
-
-    .noticias-texto p {
-        font-size: 18px;
-    }
-
-    .noticias-texto {
-        text-align: center;
-        width: 100%;
-    
-        margin-bottom: 50px;
-        height: 60px;
-    }
-
-    .noticias {
-        padding: 0px;
-        margin-bottom: 100px;
-    }
-    
-    .passar-noticias {
-        display: none;
-    }
 }
