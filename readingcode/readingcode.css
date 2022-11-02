@@ -85,6 +85,7 @@
     padding: 100px;
     background-image: url('https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
+    background-clip: border-box;
     background-size: 100%;
 }
 
@@ -118,10 +119,14 @@
     transition: 2s;
 }
 
+.landing-page .texto {
+    margin-top: -30px;
+}
+
 .landing-page h2 {
     width: 400px;
 
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -437,7 +442,7 @@
 
 /*tablet*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
 
     /*MAIN*/
     .header h1 {
@@ -449,7 +454,7 @@
     }
 
     .main {
-        background-size: 100%;
+        background-size: 1200px;
     }
 
     .main h2 {
@@ -465,6 +470,10 @@
         height: 40px;
         width: 270px;
         font-size: 14px;
+    }
+
+    .landing-page .texto {
+        margin-top: -50px;
     }
 
     /*TUTORIAIS*/
