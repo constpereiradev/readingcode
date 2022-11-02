@@ -34,17 +34,23 @@
 
         <section class="landing-page">
             <div class="texto">
-                <div class="seta">
+                <div class="texto-landing">
                     <h2>
                         Entenda os princípios da tecnologia e comece seus
                         projetos.
                     </h2>
-                    <img src="/img/Arrow 1.png" alt="Seta">
+
+                    <p>
+                        Encontre tutoriais de programação e notícias
+                        semanais do mundo da tecnologia.
+                    </p>
+
+                    <button id="btn-landing">Conhecer</button>
                 </div>
 
-                <img src="/img/_.png" alt="Símbolo de código" id="simbolo">
             </div>
-        
+            
+            <!--
             <div class="botoes">
                 <div class="card">
                     <div class="texto">
@@ -92,56 +98,133 @@
             
             </div>
         </section>
+
+    -->
     </main>
 
-    <section class="codigos" id="tutoriais">
-        <div class="img-texto">
-            <img class="codigo" src="https://live.staticflickr.com/65535/52466667927_d1204d084c_z.jpg" width="402" height="588" alt="codigo 1code2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <section class="tutoriais" id="tutoriais">
+        
 
-            <div class="texto">
-                <h2>Códigos explicados</h2>
+        <div class="pesquisa-javascript">
+            <h2>Tire suas dúvidas.</h2>
+            <div class="barra-pesquisa">
+                Tutoriais JavaScript
+            </div>
+
+
+            <div class="resultado">
+                <h4>O que são arrays?</h4>
                 <p>
-                    Sua dúvida é tirada em apenas alguns minutos de
-                    leitura.
+                    Neste artigo você entenderá como funcionam os arrays em JavaScript.
                 </p>
 
-                <button>Tutoriais</button>
+                <div class="autor">
+                    <div class="foto"></div>
+                    <div class="dados-autor">
+                        <p>
+                            Amanda Pereira
+                            <br>
+                            Estudante de programação e fundadora do
+                            readingcode.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultado">
+                <h4>Var ou let?</h4>
+                <p>
+                    Neste artigo você entenderá a diferença entre var e
+                    let e qual usar em cada situação.
+                </p>
+
+                <div class="autor">
+                    <div class="foto"></div>
+                    <div class="dados-autor">
+                        <p>
+                            Amanda Pereira
+                            <br>
+                            Estudante de programação e fundadora do
+                            readingcode.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button id="btn-tutoriais">Ver tutoriais</button>
+        </div>
+        
+        <img src="/img/3d-business-young-woman-and-young-man-gossip.png" alt="Pessoas mexendo no celular">
+    </section>
+
+    <section class="noticias" id="noticias">
+        <div class="lado-esquerdo">
+            <h2>Notícias semanais <br> do mundo <span id="tech">tech</span>.</h2> 
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_imjF-Wzsaxs1Nf8eLiq7X9rdzMVfHzEMnz14si321a_Hotm9-WG7p-H2_h6-BpKA_Kc&usqp=CAU" alt="Elon Musk">
+            <h3>Elon Musk compra Twitter</h3>
+            <p>
+                O homem mais rico do mundo concretizou a compra do
+                Twitter por 44 bilhões de dólares,
+                com o objetivo declarado de garantir
+                a liberdade de expressão na influente
+                rede social.
+            </p>
+        </div>
+
+        <div class="news">
+
+            <div class="lado-direito">
+                <div class="noticia"></div>
+                <div class="noticia"></div>
+            </div>
+    
+            <div class="lado-direito">
+                <div class="noticia"></div>
+                <div class="noticia"></div>
+            </div>
+            
+            <div class="lado-direito">
+                <div class="noticia"></div>
+                <div class="noticia"></div>
             </div>
         </div>
     </section>
 
-    <section class="noticias" id="noticias">
+    <div class="divisao">
+        <div class="linha"></div>
+    </div>
 
-        <div class="noticias-texto">
-            <h2>Notícias semanais
-                <br>
-                 do mundo tech.</h2>
-        </div>
-        
-        <div class="img-noticia">
-            <img src="https://images.wondershare.com/repairit/aticle/2021/08/twitter-header-photo-issues-1.jpg" alt="Twitter">
-        </div>
-        <div class="noticia">
-            <h3>Elon Musk compra Twitter</h3>
+    <section class="noticia2">
+        <div class="texto">
+            <h2>Mercado de tecnologia da informação está atento ao futuro</h2>
             <p>
-                O homem mais rico do mundo concretizou a compra do
-                Twitter por 44 bilhões de dólares, com o objetivo
-                declarado de garantir a liberdade de expressão na
-                influente rede social.
+                Com a alta demanda por tecnologias, 
+                a expectativa é que aconteça um aumento 
+                significativo nas vagas trabalho no setor e 
+                crescimento em investimentos
             </p>
         </div>
 
-        <div class="passar-noticias">
+        <div class="texto-img">
+            <img src="https://i.pinimg.com/236x/79/34/b9/7934b9a3f4b4daac31772ee4bf52d618.jpg" alt="Steve Jobs">
+
+            <div class="ler-noticias">
+
+                <p>
+                    Com o aumento das vagas no setor, novas tecnologias
+                    sendo atualizadas e criadas com recorrência, 
+                    o tema tecnologia de informação vem sendo assunto 
+                    em diversas mídias.
+                </p>
+    
+                <button id="btn-lernoticias">Ler nossas notícias</button>
+
+            </div>
+
             
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black;"></span>
-
-            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
-
         </div>
-
-
-        
-
     </section>
 </body>
 </html>
